@@ -3,27 +3,82 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
+    <title>Random Card Generator</title>
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
       crossorigin="anonymous"
     />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" src="style.css" />
     <link rel="shortcut icon" href="./4geeks.ico" />
   </head>
   <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
-      </div>
+    <div style="background-color: green;">
+      <br />
+      <br />
     </div>
+
+    <div class="container-fluid h-100" style="background-color: green;">
+      <div class="d-flex justify-content-center">
+        <div
+          id="card-border"
+          class="border rounded border-dark border-5 rounded-4 w-25 d-flex flex-column justify-content-between"
+          style="height: 550px; background-color: white;"
+        >
+          <div class="d-flex justify-content-between">
+            <div class="text-start ms-3 h1 pt-2">
+              <i id="icon" class="" style="font-size:80px;"></i>
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-center">
+            <div
+              id="center-icon"
+              class="text-center fw-bold"
+              style="font-size: 190px;"
+            >
+              8
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-end mb-3">
+            <div class="text-start ms-2">
+              <div class="text-end me-3 h1 icon-rotate">
+                <i id="icon2" class="" style="font-size:80px;"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-grid gap-2 col-1 mx-auto p-3">
+        <button id="btnRefresh" type="button" class="btn btn-warning">
+          New Card
+        </button>
+
+        <div style="background-color: green;">
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+          <br />
+        </div>
+    
+      </div>
+
+    <script src="demo_script_src.js"></script>
   </body>
 </html>
